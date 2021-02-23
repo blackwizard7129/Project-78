@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Project 78</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <center>
+        <p id="firstp">My Family Book</p>
+        <img id="album" src="download.jpg">
+    <div>
+<button type="button" onclick="nextslide()">Next</button>
+</div>
+      <p id="reasontext">The family book of Aryan V</p> 
+    </center>  
+    <script>
+        var names = [
+  "Velliangiri S",
+  "Jayapriya N",
+  "Akshaya V",
+  "Aryan V"
+];
+var images = [
+  "cop-clipart-abrupt-3 (1).png",
+  "LindaFull.JPG.jpg",
+  "abc.jpg",
+  "xyz.jpg"
+];
+var i = 0;
+function nextslide(){
+  document.getElementById("reasontext").innerHTML = names[i];
+  document.getElementById("album").src = images[i];i++;
+}
+    </script>
+    </body>
+  </html>
+  
+      
